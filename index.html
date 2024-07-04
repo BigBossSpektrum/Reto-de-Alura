@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es-col">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+        <header>
+            <img class="logo" src="./assets/aluraLogo.png"  alt="logo">
+        </header>
+
+        <section>
+            <div class="containerPrimary">
+                <span >
+                    <textarea class="text-area1" id="text-encrypt" placeholder="Ingrese el texto aqui"></textarea>
+                </span>
+
+                <span class="info">
+                    <span class="span-interogante">
+                        <img class="interrogante" src="./assets/interrogante.png" alt="interrogante">
+                        <small class="font-size">Solo letras minúsculas y sin acentos</small>
+                    </span>
+                    <div class="btn-container">
+                        <button class="border-radius btn-encriptar" onclick="encryptText()">Encriptar</button>
+                        <button class="border-radius btn-desencriptar" onclick="decryptText()">Desencriptar</button>
+                    </div>
+                </span>
+            </div>
+    
+            <div class="containerSecundary">
+                <aside id="imagen-di">
+                    <img id="muneco" src="./assets/imagen.png" alt="muneco">
+                    <strong>Ningun mensaje fue encontrado</strong>
+                    <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+                </aside>
+                <aside id="text-di">
+                    <textarea class="text-area2" name="" readonly id="area-encrypt"></textarea>
+                    <button class="border-radius btn-copiar" onclick="copyText()">Copiar</button>
+                </aside>
+            </div> 
+        </section>
+        
+    <footer class="footer">
+        <strong>Desarrollado por: Silveker Hernandez</strong></footer>
+    <script src="./scripts.js"></script>
+</body>
+</html>
