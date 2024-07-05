@@ -208,4 +208,21 @@ footer{
     .btn-container{
         width: 90%;
     }
+
+    .btn-container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1.125rem;
+    }
+    
+    .btn-encriptar{
+        width: 100%;
+        padding: 1.1rem;
+    }
+
+    .btn-desencriptar{
+        width: 100%;
+        padding: 1.1rem;
+    }
 }
